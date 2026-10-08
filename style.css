@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.felso-navigacio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.felso-navigacio .lepesek {
+    display: flex;
+    gap: 15px;
+}
+
+.felso-navigacio .lepes {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.fejlec {
+    display: flex;
+    width: 100%;
+    
+}
+
+.fejlec-bal {
+    flex: 1; 
+    padding: 20px;
+}
+
+.fejlec-jobb {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .fejlec,
+    .tartalom {
+        flex-direction: column; 
+    }
+
+    .tartalom article,
+    .tartalom aside {
+        flex: 0 0 100%;
+    }
+}
