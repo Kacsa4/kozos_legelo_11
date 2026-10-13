@@ -169,8 +169,12 @@ main {
 .gondolkodj {
     margin-top: 20px;
     padding: 15px;
+    background-color: #f3f7ed;
+    border-left: 5px solid #c44f0c;
+    border-radius: 10px;
     
 }
+
 
 @media (max-width: 768px) {
     .fejlec,
